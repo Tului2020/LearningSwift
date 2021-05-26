@@ -15,8 +15,14 @@ struct ContentView: View {
 
             Button("Click Me") {
                 print("clicked")
-                
             }
+            
+            
+            Button(action: {
+                print("button clicked")
+            }, label: {
+                Image("dealbutton")
+            })
         }
     }
 }
