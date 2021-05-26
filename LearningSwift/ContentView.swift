@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var playerCard = "card2"
-    @State var cpuCard = "card2"
+    @State var playerCard = "card" + String(Int.random(in:2...14))
+    @State var cpuCard = "card" + String(Int.random(in:2...14))
     @State var playerScore = 0
     @State var cpuScore = 0
     
@@ -19,7 +19,11 @@ struct ContentView: View {
         
         ZStack {
             // Background (Color: Green)
-            Image("background").ignoresSafeArea()
+            Image("background")//.ignoresSafeArea()
+                .resizable()
+                .frame(height: 1000)
+                
+                
 
             
             VStack(spacing: 100) {
@@ -38,8 +42,8 @@ struct ContentView: View {
                 
                 Button(action: {
                     
-                    let cpuCardNum = Int.random(in:2..<15)
-                    let playerCardNum = Int.random(in:2..<15)
+                    let cpuCardNum = Int.random(in:2...14)
+                    let playerCardNum = Int.random(in:2...14)
                     
                     playerCard = "card" + String(playerCardNum)
                     cpuCard = "card" + String(cpuCardNum)
@@ -79,6 +83,7 @@ struct ContentView: View {
            
                 
         }
+        .frame(height: 8.0)
         
         
     }
