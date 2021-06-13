@@ -15,15 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                
-                NavigationLink(
-                    destination: SecondPage(randomNum: self.$randomNum),
-                    label: {
-                        Text("Go Next")
-                    })
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding()
-                    
+
                 HStack {
                     Text("Lucky number")
                     
@@ -57,6 +49,12 @@ struct ContentView: View {
             .sheet(isPresented: $showModal, content: {
                 Text("test")
             })
+            .navigationTitle("Property Wrappers")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Text("Go Next")
+                }
+            }
             
             
         }
