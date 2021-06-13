@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SecondPage: View {
-    @ObservedObject var user: User;
+    
+    @EnvironmentObject var user: User
     
     var body: some View {
         NavigationView {
@@ -24,9 +25,10 @@ struct SecondPage: View {
                 
                 
                 Group {
+                    //Text("Hello")
                     TextField("username", text: self.$user.username)
-                    TextField("first name", text: self.$user.firstName)
-                    TextField("last name", text: self.$user.lastName)
+                    //TextField("first name", text: self.$user.firstName)
+                    //TextField("last name", text: self.$user.lastName)
                 }
                 .padding()
                 .font(.title3)
@@ -37,11 +39,12 @@ struct SecondPage: View {
                 
             }
         }
+        
     }
 }
 
 struct SecondPage_Previews: PreviewProvider {
     static var previews: some View {
-        SecondPage(user: User())
+        SecondPage()
     }
 }

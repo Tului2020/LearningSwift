@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var user = User();
+    @ObservedObject var user = User();
     
     var body: some View {
         
@@ -16,7 +16,7 @@ struct ContentView: View {
             VStack {
                 
                 NavigationLink(
-                    destination: SecondPage(user: user),
+                    destination: SecondPage(),
                     label: {
                         /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
                     })
@@ -26,8 +26,8 @@ struct ContentView: View {
                 
                 Group {
                     TextField("username", text: self.$user.username)
-                    TextField("first name", text: self.$user.firstName)
-                    TextField("last name", text: self.$user.lastName)
+                    //TextField("first name", text: "")
+                    //TextField("last name", text: "")
                 }
                 .padding()
                 .font(.title3)
@@ -38,6 +38,7 @@ struct ContentView: View {
                 
             }
         }
+        .environmentObject(user)
 
 
         
@@ -52,8 +53,9 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 class User: ObservableObject {
-    @Published var username: String = "Tului2020"
-    @Published var firstName: String = "Tului"
-    @Published var lastName: String = "Gantulga"
+    @Published var firstName = "Tului";
+    @Published var lastName = "Gantulga"
+    @Published var username = "Tului2020";
 }
+
 
