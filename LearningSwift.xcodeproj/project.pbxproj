@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED959C69267687D7002AC0B7 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED959C68267687D7002AC0B7 /* SecondPage.swift */; };
+		ED959C6B267687E1002AC0B7 /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED959C6A267687E1002AC0B7 /* ThirdPage.swift */; };
 		EDD96B87265D5E6700E93662 /* LearningSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD96B86265D5E6700E93662 /* LearningSwiftApp.swift */; };
 		EDD96B89265D5E6700E93662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD96B88265D5E6700E93662 /* ContentView.swift */; };
 		EDD96B8B265D5E6700E93662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD96B8A265D5E6700E93662 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED959C68267687D7002AC0B7 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		ED959C6A267687E1002AC0B7 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
 		EDD96B83265D5E6700E93662 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD96B86265D5E6700E93662 /* LearningSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftApp.swift; sourceTree = "<group>"; };
 		EDD96B88265D5E6700E93662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,9 +37,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED959C67267687CB002AC0B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED959C68267687D7002AC0B7 /* SecondPage.swift */,
+				ED959C6A267687E1002AC0B7 /* ThirdPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EDD96B7A265D5E6700E93662 = {
 			isa = PBXGroup;
 			children = (
+				ED959C67267687CB002AC0B7 /* Views */,
 				EDD96B85265D5E6700E93662 /* LearningSwift */,
 				EDD96B84265D5E6700E93662 /* Products */,
 			);
@@ -140,6 +154,8 @@
 			files = (
 				EDD96B89265D5E6700E93662 /* ContentView.swift in Sources */,
 				EDD96B87265D5E6700E93662 /* LearningSwiftApp.swift in Sources */,
+				ED959C6B267687E1002AC0B7 /* ThirdPage.swift in Sources */,
+				ED959C69267687D7002AC0B7 /* SecondPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,27 +1,17 @@
 //
-//  ContentView.swift
+//  ThirdPage.swift
 //  LearningSwift
 //
-//  Created by Tului Gantulga on 5/25/21.
+//  Created by Tului Gantulga on 6/13/21.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ThirdPage: View {
     @ObservedObject private var user = User();
-    
     var body: some View {
-        
         NavigationView {
             VStack {
-                
-                NavigationLink(
-                    destination: SecondPage(user: user),
-                    label: {
-                        /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
-                    })
-                
-                Spacer()
                 
                 
                 Group {
@@ -38,22 +28,11 @@ struct ContentView: View {
                 
             }
         }
-
-
-        
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ThirdPage_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ThirdPage()
     }
 }
-
-class User: ObservableObject {
-    @Published var username: String = "Tului2020"
-    @Published var firstName: String = "Tului"
-    @Published var lastName: String = "Gantulga"
-}
-
