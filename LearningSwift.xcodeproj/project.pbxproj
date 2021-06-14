@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED69C12E2676DD8500C3D52F /* OneTimeCodeBoxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69C12D2676DD8500C3D52F /* OneTimeCodeBoxes.swift */; };
+		ED69C1302676DDAD00C3D52F /* OneTimeCodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69C12F2676DDAD00C3D52F /* OneTimeCodeInput.swift */; };
+		ED69C1332676E4E200C3D52F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69C1322676E4E200C3D52F /* String.swift */; };
 		EDD96B87265D5E6700E93662 /* LearningSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD96B86265D5E6700E93662 /* LearningSwiftApp.swift */; };
 		EDD96B89265D5E6700E93662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD96B88265D5E6700E93662 /* ContentView.swift */; };
 		EDD96B8B265D5E6700E93662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD96B8A265D5E6700E93662 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED69C12D2676DD8500C3D52F /* OneTimeCodeBoxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeBoxes.swift; sourceTree = "<group>"; };
+		ED69C12F2676DDAD00C3D52F /* OneTimeCodeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeInput.swift; sourceTree = "<group>"; };
+		ED69C1322676E4E200C3D52F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		EDD96B83265D5E6700E93662 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD96B86265D5E6700E93662 /* LearningSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftApp.swift; sourceTree = "<group>"; };
 		EDD96B88265D5E6700E93662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED69C12C2676DD6800C3D52F /* OneTimeCode */ = {
+			isa = PBXGroup;
+			children = (
+				ED69C12D2676DD8500C3D52F /* OneTimeCodeBoxes.swift */,
+				ED69C12F2676DDAD00C3D52F /* OneTimeCodeInput.swift */,
+			);
+			path = OneTimeCode;
+			sourceTree = "<group>";
+		};
+		ED69C1312676E4D600C3D52F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ED69C1322676E4E200C3D52F /* String.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EDD96B7A265D5E6700E93662 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +75,8 @@
 		EDD96B85265D5E6700E93662 /* LearningSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ED69C1312676E4D600C3D52F /* Utils */,
+				ED69C12C2676DD6800C3D52F /* OneTimeCode */,
 				EDD96B86265D5E6700E93662 /* LearningSwiftApp.swift */,
 				EDD96B88265D5E6700E93662 /* ContentView.swift */,
 				EDD96B8A265D5E6700E93662 /* Assets.xcassets */,
@@ -138,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED69C12E2676DD8500C3D52F /* OneTimeCodeBoxes.swift in Sources */,
+				ED69C1302676DDAD00C3D52F /* OneTimeCodeInput.swift in Sources */,
+				ED69C1332676E4E200C3D52F /* String.swift in Sources */,
 				EDD96B89265D5E6700E93662 /* ContentView.swift in Sources */,
 				EDD96B87265D5E6700E93662 /* LearningSwiftApp.swift in Sources */,
 			);
