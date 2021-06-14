@@ -105,6 +105,7 @@ struct OneTimeCodeInput: UIViewRepresentable {
             firstResponderIndex = max(0, index - 1)
         });
         tf.delegate = context.coordinator
+        tf.placeholder = "x"
         tf.keyboardType = .numberPad
         tf.textContentType = .oneTimeCode
         tf.font = .preferredFont(forTextStyle: .largeTitle)
